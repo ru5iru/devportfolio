@@ -1,10 +1,13 @@
 {
+  "homepage": "http://ru5iru.github.io/devportfolio",
   "name": "devportfolio-template",
   "version": "1.2.2",
   "description": "",
   "main": "js/scripts.js",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "portfolio",
@@ -17,6 +20,7 @@
   "author": "Ryan Fitzgerald",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "gulp": "^4.0.2",
